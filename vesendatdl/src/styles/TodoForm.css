@@ -1,12 +1,10 @@
-/* Contenedor del formulario */
 form {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
   }
-  
-  /* Input de texto */
+ 
   input[type="text"] {
     flex: 1;
     padding: 10px;
@@ -21,8 +19,7 @@ form {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
   }
-  
-  /* Botón Agregar */
+
   button {
     padding: 10px 15px;
     font-size: 1rem;

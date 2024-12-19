@@ -1,4 +1,3 @@
-/* Contenedor principal */
 .list-group {
     margin: 20px auto;
     max-width: 600px;
@@ -7,8 +6,7 @@
     overflow: hidden;
     background-color: #ffffff;
   }
-  
-  /* Mensaje para lista vacía */
+
   .list-empty {
     text-align: center;
     padding: 20px;

@@ -1,4 +1,3 @@
-/* Estilo general para cada elemento de la lista */
 .list-group-item {
     padding: 15px;
     border-radius: 8px;
@@ -9,20 +8,17 @@
     background-color: #f8f9fa;
     transform: scale(1.02);
   }
-  
-  /* Estilo para tareas completadas */
+
   .list-group-item.bg-success {
     background-color: #d4edda !important;
     color: #155724 !important;
   }
-  
-  /* Texto de las tareas */
+
   span {
     font-size: 1rem;
     font-weight: 500;
   }
-  
-  /* Input en modo edición */
+
   form-control {
     font-size: 1rem;
     border-radius: 5px;

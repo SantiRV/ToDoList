@@ -1,0 +1,44 @@
+.card-text {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+  }
+  
+  .card-text strong {
+    font-size: 1.2rem; 
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-text .total {
+    background-color: #5bc0de; 
+  }
+  
+  .card-text .completed {
+    background-color: #28a745; 
+  }
+  
+  .card-text .pending {
+    background-color: #ffc107; 
+  }
+
+  .card-container {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; 
+    overflow: hidden; 
+  }
+  
+  button {
+    font-weight: 500;
+  }
