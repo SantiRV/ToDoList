@@ -4,7 +4,31 @@ const useTodos = () => {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState('all');
 
-  // Calcular estadísticas
+  // Agregar nueva tarea
+  const addTodo = (todo) => {
+    setTodos([...todos, todo]);
+  };
+
+  // Eliminar tarea
+  const removeTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+  
+  // Alternar estado completado
+  const toggleTodo = (id) => {
+    setTodos(todos.map(todo => 
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    ));
+  };
+
+  // Filtrar tareas
+  const filteredTodos = todos.filter(todo => {
+    if (filter === 'completed') return todo.completed;
+    if (filter === 'pending') return !todo.completed;
+    return true; // 'all'
+  });
+
+  // Contador 
   const totalTasks = todos.length;
   const completedTasks = todos.filter(todo => todo.completed).length;
   const pendingTasks = totalTasks - completedTasks;
@@ -27,30 +51,6 @@ const useTodos = () => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
 
-  // Agregar nueva tarea
-  const addTodo = (todo) => {
-    setTodos([...todos, todo]);
-  };
-
-  // Alternar estado completado
-  const toggleTodo = (id) => {
-    setTodos(todos.map(todo => 
-      todo.id === id ? { ...todo, completed: !todo.completed } : todo
-    ));
-  };
-
-  // Eliminar tarea
-  const removeTodo = (id) => {
-    setTodos(todos.filter(todo => todo.id !== id));
-  };
-
-  // Filtrar tareas
-  const filteredTodos = todos.filter(todo => {
-    if (filter === 'completed') return todo.completed;
-    if (filter === 'pending') return !todo.completed;
-    return true; // 'all'
-  });
-
   return {
     todos: filteredTodos,
     addTodo,
@@ -64,5 +64,11 @@ const useTodos = () => {
     pendingTasks
   };
 };
-
+  
 export default useTodos;
+  
+
+  
+
+
+

@@ -14,7 +14,7 @@ const TodoList = ({ todos, toggleTodo, removeTodo, editTodo }) => {
             <TodoItem
               key={todo.id}
               todo={todo}
-              toggleTodo={toggleTodo}
+              toggleTodo={toggleTodo} //Cambia el estado de la tarea 
               removeTodo={removeTodo}
               editTodo={editTodo}
             />
