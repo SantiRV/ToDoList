@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import '../styles/TodoForm.css';
 
 const TodoForm = ({ addTodo }) => {
   const [text, setText] = useState('');
@@ -17,16 +18,18 @@ const TodoForm = ({ addTodo }) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="mb-4">
-      <Form.Group controlId="formTodo">
+    <Form onSubmit={handleSubmit} className="todo-form">
+      <Form.Group controlId="formTodo" className="mb-0 flex-grow-1">
         <Form.Control 
           type="text" 
           value={text} 
           onChange={(e) => setText(e.target.value)} 
-          placeholder="Agregar una tarea"
+          placeholder="Add a task"
         />
       </Form.Group>
-      <Button variant="primary" type="submit">Agregar</Button>
+      <Button variant="primary" type="submit" className="add-button">
+      Add
+      </Button>
     </Form>
   );
 };

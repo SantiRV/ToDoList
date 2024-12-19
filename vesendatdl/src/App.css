@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.app-container {
+  background-image: url('./assets/TDL.png'); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilo para el contador de tareas */
+.card-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-text strong {
+  font-size: 1.2rem; /* Reducido el tamaño del texto */
+  color: #fff;
+  padding: 5px 12px; /* Reducido el padding */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Colores para los contadores */
+.card-text .total {
+  background-color: #5bc0de; /* Azul claro */
+}
+
+.card-text .completed {
+  background-color: #28a745; /* Verde */
+}
+
+.card-text .pending {
+  background-color: #ffc107; /* Amarillo */
+}
+
+/* Estilo del contenedor de la card */
+.card-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /* Asegura que el card esté centrado */
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Estilos generales para los botones */
+button {
+  font-weight: 500;
 }

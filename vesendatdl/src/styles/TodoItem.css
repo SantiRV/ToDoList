@@ -1,0 +1,67 @@
+/* Estilo general para cada elemento de la lista */
+.list-group-item {
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+  }
+  
+  /* Estilo para tareas completadas */
+  .list-group-item.bg-success {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+  }
+  
+  /* Texto de las tareas */
+  span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Input en modo edición */
+  form-control {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ced4da;
+  }
+  
+  /* Botones */
+  button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button.btn-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+  }
+  
+  button.btn-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  button.btn-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  button.btn-secondary {
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+    color: #383d41;
+  }
+  
