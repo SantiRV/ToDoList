@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const useTodos = () => {
   const [todos, setTodos] = useState([]);
